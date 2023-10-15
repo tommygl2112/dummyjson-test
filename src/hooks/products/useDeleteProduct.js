@@ -6,7 +6,7 @@ export const useDeleteProduct = () => {
         try {
             const response = await updateAProduct(id);
             alert("Producto eliminado satisfactoriamente");
-            window.location.href = 'http://localhost:3000/list';
+            window.location.href = 'https://dummyjson-test.vercel.app/list';
         } catch (error) {
             alert("Error al eliminar el producto");
             console.log(`login error: ${error}`);
